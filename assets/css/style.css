@@ -1,0 +1,49 @@
+/* 基础样式 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    background: #f5f3ef;
+    margin: 0;
+}
+
+.navbar {
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: #6b8c42;
+    text-decoration: none;
+}
+
+/* 轮播图 */
+.carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* .carousel img:not(.active) {
+    display: none;
+} */
+
+/* 卡片通用样式 */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-menu { flex-direction: column; }
+    .carousel { height: 250px; }
+}

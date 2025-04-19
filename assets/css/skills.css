@@ -1,0 +1,102 @@
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        
+        /* 技能页面样式 */
+        .skills-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            color: #6b8c42;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .skill-category {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h2 {
+            color: #6b8c42;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e0e9d1;
+        }
+        
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .progress-bar {
+            height: 15px;
+            background-color: #e0e9d1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background-color: #6b8c42;
+            border-radius: 8px;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        
+        /* 作品展示 */
+        .portfolio {
+            margin-top: 40px;
+        }
+        
+        .portfolio h2 {
+            color: #6b8c42;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .nav-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }

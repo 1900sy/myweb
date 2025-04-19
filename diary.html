@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成长日记 | 青柠日记</title>
+	<link rel="stylesheet" href="/myweb/assets/css/style.css">
+	<link rel="stylesheet" href="/myweb/assets/css/diary.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-menu">
+            <a href="index.html" class="nav-item">首页</a>
+            <a href="diary.html" class="nav-item active">成长日记</a>
+            <a href="skills.html" class="nav-item">技能展示</a>
+            <a href="community.html" class="nav-item">互动社区</a>
+            <a href="about.html" class="nav-item">关于我</a>
+        </div>
+    </nav>
+
+    <!-- 日记内容 -->
+    <div class="diary-container">
+        <h1>我的成长日记</h1>
+        
+        <!-- 日记筛选 -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="class">课堂</button>
+            <button class="filter-btn" data-filter="club">社团</button>
+            <button class="filter-btn" data-filter="life">生活</button>
+        </div>
+        
+        <!-- 日记列表 -->
+        <div class="diary-list">
+            <!-- 日记卡片1 -->
+            <div class="diary-card" data-category="class">
+                <div class="diary-header">
+                    <h2 class="diary-title">运动会开幕式</h2>
+                    <span class="diary-date">2024-11-6</span>
+                </div>
+                <div class="diary-content">
+                    <img src="/myweb/assets/images/diary1.jpg" alt="运动会" class="diary-image">
+                    <p>今天是学校运动会开幕式，可惜这次又要参加竞赛，又不能去了</p>
+                </div>
+                <div class="diary-footer">
+                    <span class="diary-tag">#校园生活</span>
+                    <div class="diary-actions">
+                        <button class="action-btn like-btn">
+                            <span class="like-icon">❤️</span>
+                            <span class="like-count">12</span>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <span class="comment-icon">💬</span>
+                            <span class="comment-count">3</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 日记卡片2 -->
+            <div class="diary-card" data-category="club">
+                <div class="diary-header">
+                    <h2 class="diary-title">第二次参加云计算比赛</h2>
+                    <span class="diary-date">2024-11-16</span>
+                </div>
+                <div class="diary-content">
+                    <img src="/myweb/assets/images/diary2.jpg" alt="云计算比赛" class="diary-image">
+                    <p>第二次参加云计算比赛，一次比一次成绩好。虽然还是没获奖，但从中吸取了许多宝贵的经验，也提高了自己</p>
+                </div>
+                <div class="diary-footer">
+                    <span class="diary-tag">#技能竞赛</span>
+                    <div class="diary-actions">
+                        <button class="action-btn like-btn">
+                            <span class="like-icon">❤️</span>
+                            <span class="like-count">24</span>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <span class="comment-icon">💬</span>
+                            <span class="comment-count">8</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 新增日记按钮 -->
+        <button class="add-diary-btn">+</button>
+    </div>
+
+    <script src="/myweb/assets/js/diary.js">
+     
+    </script>
+</body>
+</html>

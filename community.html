@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动社区 | 青柠日记</title>
+    <link rel="stylesheet" href="/myweb/assets/css/style.css">
+    <link rel="stylesheet" href="/myweb/assets/css/community.css">
+</head>
+<body>
+    <!-- 导航栏 (与首页一致) -->
+    <nav class="navbar">
+        <div class="nav-menu">
+            <a href="index.html" class="nav-item">首页</a>
+            <a href="diary.html" class="nav-item">成长日记</a>
+            <a href="skills.html" class="nav-item">技能展示</a>
+            <a href="community.html" class="nav-item active">互动社区</a>
+            <a href="about.html" class="nav-item">关于我</a>
+        </div>
+    </nav>
+
+    <div class="community-container">
+        <h1>💬 青春对话箱</h1>
+        
+        <!-- 问答列表 (硬编码数据) -->
+        <div class="qa-list">
+            <div class="qa-item">
+                <div class="question">
+                    <h3>Q: 如何平衡实训和文化课？</h3>
+                </div>
+                <div class="answer">
+                    <p>A: 建议制定每周计划表，固定时间段用于理论学习...</p>
+                </div>
+            </div>
+            <div class="qa-item">
+                <div class="question">
+                    <h3>Q: 职校生能考大学吗？</h3>
+                </div>
+                <div class="answer">
+                    <p>A: 可以通过对口升学考试或高职单招继续深造~</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提问表单 (前端模拟提交) -->
+        <form id="ask-form" class="ask-form">
+            <textarea placeholder="输入你的问题..." required></textarea>
+            <button type="submit">提交问题</button>
+        </form>
+    </div>
+
+    <script src="/myweb/assets/js/community.js"></script>
+</body>
+</html>
